@@ -1,11 +1,11 @@
 #include<stdio.h>
-#include<string.h>
 int main()
 {
-    int i;
     char str[1000];
-    scanf("%s",str);
-    for(i=0;i<=strlen(str);i++)
+    scanf("%[^
+]s",str);
+    int i;
+    for(i=0;str[i]!=NULL;i++)
     {
         if(str[i]=='6')
         {
@@ -14,4 +14,5 @@ int main()
         }
     }
     printf("%s",str);
+    
 }
