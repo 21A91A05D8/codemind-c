@@ -1,3 +1,4 @@
+#include<math.h>
 #include<stdio.h>
 int main()
 {
@@ -21,7 +22,7 @@ int main()
     {
         for(j=0;j<n;j++)
         {
-            c[i][j]=a[i][j]+b[i][j];
+            c[i][j]=(a[i][j]+b[i][j]);
         }
     }
     for(i=0;i<n;i++)
