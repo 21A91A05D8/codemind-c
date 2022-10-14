@@ -1,17 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,j,a;
+    int n,i,j,x=65;
     scanf("%d",&n);
-    a=65+n-1;
-    for(i=n;i>=1;i--)
+    for(i=1;i<=n;i++)
     {
-        for(j=1;j<=i;j++)
+        for(j=1;j<=n;j++)
         {
-            printf("%c ",a);
+            printf("%c ",x);
         }
         printf("
 ");
-        a=a-1;
+        x+=1;
     }
 }
